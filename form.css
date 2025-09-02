@@ -1,0 +1,2802 @@
+* {
+  box-sizing: border-box;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black; /* Устанавливаем цвет черным для посещенных ссылок */
+}
+
+h1, h2, h3, p {
+  text-transform: uppercase;
+}
+
+body {
+  box-sizing: border-box;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-image: url('img/noice.jpg');
+  background-repeat: repeat;
+  width: 1260px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+header {
+  background-color: white;
+  margin: 0 auto;
+  width: 1180px;
+  position: absolute;
+  z-index: 200;
+  max-width: 100%;
+  margin-top: 0;
+  height: 30px;
+  margin-left: 40px;
+
+}
+
+.phtanv.inactive {
+  color: gray; /* Серый цвет для неактивной ссылки */
+  pointer-events: none; /* Делаем ссылку неактивной */
+  text-decoration: none; /* Убираем подчеркивание */
+}
+
+.site-navigation {
+  background-color: white;
+  display: flex;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  list-style-type: none;
+  width: 100%;  /* Ширина 100% для .main-navigation */
+  height: 35px; /* Высота для .main-navigation */
+  margin: 0 auto;
+  margin-top: 15px;
+}
+
+.site-navigation2 {
+  background-color: white;
+  display: flex;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  list-style-type: none;
+  width: 100%;  /* Ширина 100% для .main-navigation */
+  height: 20px; /* Высота для .main-navigation */
+}
+
+.site-navigation1 {
+  display: flex;
+  margin-left: 120px;
+  white-space: nowrap;
+}
+
+.logoone {
+  max-width: 100%;
+  width: 232px;
+  height: 180px;
+  position: absolute;
+  z-index: 5000;
+  right: 483px;
+  top: -44px;
+}
+
+.main-navigation {
+  position: absolute;
+  z-index: 1000;
+  left: 530px;
+  padding: 0;
+  margin: 0;
+  top: -2px;
+}
+
+.site-navigation li {
+  margin-left: 50px;
+  font-weight: bold;
+}
+
+.site-navigation2 li {
+  margin-right: 90px;
+}
+
+.logo-main {
+  position: absolute;
+  z-index: 100;
+}
+
+.container {
+  width: 1180px; /* Ширина окна */
+  height: 410px; /* Высота окна */
+  overflow: hidden; /* Скрываем части фона, выходящие за пределы контейнера */
+  background-image: url('img/bg-back-desktop@2x.jpg'); /* Фоновое изображение */
+  background-size: 100%; /* Масштабируем фон внутри контейнера */
+  background-position: center 150%;
+  background-repeat: no-repeat; /* Не повторяем изображение */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.centrsite svg {
+  width: 1210px;   
+  height: auto;
+  max-width: 100%;
+  margin-top: 10px;
+}
+
+.centrsite {
+  width: 1210px;      /* Родительский контейнер занимает всю ширину */
+  max-width: 100%; /* Ограничение ширины контейнера, если нужно */
+  margin-top: 247px;
+}
+
+.site-navigation a {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px; /* Укажите нужный размер шрифта */
+  text-decoration: none; /* Убирает подчеркивание, если нужно */
+  color: black; /* Укажите нужный цвет текста */
+  text-transform: uppercase;
+}
+
+.site-navigation a:hover {
+  color: #007bff; /* Например, цвет при наведении */
+}
+
+.centrblock {
+  font-size: 13px;
+  background-color: white;
+  height: 200px;
+  margin: 0;
+  width: 100%;
+  margin-left: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Это заставляет элементы располагаться по вертикали */
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: -30px;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.centrblock h2 {
+  font-size: 28px;
+  color: black;
+}
+
+.footer {
+  background-color: white;
+  display: flex;          /* Включаем Flexbox */
+  justify-content: space-between;  /* Расставляем блоки по бокам */
+  width: 100%;
+  margin: 0 auto;
+  height: 150px;
+  flex-grow: 1; /* Каждый блок растягивается на одинаковую ширину */
+  text-align: center;
+  line-height: 100px;
+  margin-top: 10px;
+  max-width: 1150px;
+}
+
+.footerblock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Это заставляет элементы располагаться по вертикали */
+  text-align: center;
+  width: 393.33px;
+  margin-left: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 23px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.social-button svg {
+  width: 30px; /* Убедитесь, что размеры иконок подходят */
+  height: 30px;
+  fill: black;  /* Белый цвет для иконки */
+}
+
+.social-button {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+}
+
+.footerblockcentr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 393.33px;
+  text-transform: uppercase;
+  font-size: 16px;
+  text-decoration: none;
+  gap: 5px;
+  line-height: 100px;
+  margin: 0 auto;
+}
+
+.social-icon i {
+  font-size: 20px;  /* Размер иконки */
+  color: white;  /* Цвет иконки */
+  padding: 10px;  /* Отступы внутри иконки */
+  transition: transform 0.3s ease;
+}
+
+.social-icon i:hover {
+  transform: scale(1.1);  /* Увеличение при наведении */
+}
+
+.social-icon:hover {
+  background-color: rgb(125, 167, 220);
+}
+
+.social-icon {
+  background-color: rgb(125, 187, 220);
+  display: flex;            /* Используем flexbox для выравнивания */
+  justify-content: center;  /* Центрируем иконку по горизонтали */
+  align-items: center;      /* Центрируем иконку по вертикали */
+}
+
+.footerblock h2 {
+  font-size: 25px;
+  margin-left: -10px;
+}
+
+.footerrightlink svg {
+  width: 40px;  /* Размер иконки */
+  height: 40px; /* Размер иконки */
+  transition: fill 0.3s ease; /* Плавное изменение цвета */
+  margin-top: 5px;
+}
+
+.icon-container:focus-within svg {
+  outline: none; /* Убираем стандартную область фокуса */
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2); /* Мягкая тень вокруг иконки */
+}
+
+.footerrightlink {
+  display: inline-flex;
+  align-items: center;
+  padding: 0;
+  text-decoration: none;
+}
+
+.footerblock2 {
+  width: 393.33px;
+  text-transform: uppercase;
+  font-size: 16px;
+  display: flex;
+  justify-content: center; /* Центрируем содержимое по горизонтали */
+  align-items: center;     /* Центрируем по вертикали */
+  text-align: center;
+}
+
+.footerrightlink {
+  display: flex;           /* Используем flexbox для выравнивания элементов внутри ссылки */
+  align-items: center;     /* Центрируем текст и иконку по вертикали */
+  text-decoration: none;
+  color: black;
+}
+
+.icon-container {
+  display: inline-block; /* Иконка остаётся в строке */
+  margin-left: 10px;     /* Это сдвигает иконку относительно текста */
+}
+
+.icon-container svg {
+  margin-bottom: -12px;
+}
+
+.footerrightlink .icon-container svg {
+  width: 40px;  /* Размер иконки */
+  height: 40px; /* Размер иконки */
+  transition: fill 0.3s ease; /* Плавное изменение цвета */
+}
+
+/* При наведении на иконку меняем её цвет */
+.footerrightlink .icon-container svg:hover {
+  fill: rgb(125, 187, 220);
+}
+
+.container2 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  margin-left: 40px;
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.left, .right {
+  width: 45%;
+  display: flex;
+  flex-direction: column; /* Элементы внутри .left будут располагаться по вертикали */
+  align-items: center;
+  height: 178px;
+  margin: 0 auto;
+}
+
+.separator {
+  width: 1px;
+  background-color: #D3D3D3;;
+  margin: 0 20px;
+  height: 200px;
+  max-height: 100%;
+}
+
+.form-group {
+  margin-bottom: -20px;
+  text-align: center;
+}
+
+.form-group label {
+  display: flex;
+  align-items: center;
+}
+
+.form-group2 {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.left .form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.left .form-group input[type="radio"] {
+  margin-right: 15px; /* Отступ между радиокнопкой и текстом */
+  width: 40px; /* Увеличиваем диаметр кружка */
+  height: 40px; /* Увеличиваем высоту кружка */
+  border-radius: 50%; /* Круглая форма */
+  appearance: none; /* Убираем стандартный стиль радио кнопки */
+  position: relative;
+  background-color: #f3f3f3;
+  border: none;
+}
+
+.left .form-group input[type="radio"]:checked {
+  background-color: #f3f3f3;
+}
+
+.left .form-group input[type="radio"]:checked::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 12px; /* Размер точки */
+  height: 12px; /* Размер точки */
+  border-radius: 50%; /* Круглая точка */
+  background-color: black;
+  transform: translate(-50%, -50%);
+}
+
+.left .form-group label {
+  font-size: 16px; /* Размер текста */
+  line-height: 20px;
+}
+
+.container2 .form-group label {
+  text-transform: none;
+  font-weight: bold;
+}
+
+
+.right .form-group2 input[type="text"] {
+    width: 100%; /* Инпут будет занимать 100% ширины родительского блока */
+    padding: 4px; /* Отступы внутри инпута */
+    background-color: #f3f3f3;
+    height: 40px;
+    box-sizing: border-box;
+    border: none;
+}
+
+#first-name, #last-name, #patronymic {
+    width: 100%; /* Убираем фиксированную максимальную ширину */
+    margin-left: 0; /* Убираем отступ слева */
+    border: none;
+}
+
+.right .form-group2 {
+    display: flex;
+    align-items: center; /* Выравнивание по центру по вертикали */
+    margin-bottom: 27px; /* Отступ между строками */
+    border: none;
+}
+
+.right .form-group2 label {
+    margin-right: 10px; /* Отступ между меткой и инпутом */
+    width: 150px; /* Ширина метки, чтобы она не раздувала блок */
+    text-align: left; /* Выравнивание текста по левому краю */
+    border: none;
+}
+
+.right .form-group2 input[type="text"] {
+    width: 100%; /* Инпут будет занимать все доступное пространство */
+    padding: 4px;
+    background-color: #f3f3f3; 
+    height: 40px;
+    box-sizing: border-box;
+    border: none;
+}
+
+.contactsinform {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Центрируем все элементы */
+  justify-content: center;
+  gap: 20px;
+  width: 1180px;
+  max-width: 100%;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+h2 {
+  margin-bottom: 10px; /* Отступ между заголовком и формой */
+  text-align: center;
+}
+
+.form-contact, .form-mail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-contact label,
+.form-mail label {
+  width: 150px; /* Ширина метки */
+  text-align: right; /* Выравнивание текста по левому краю */
+  font-size: 14px; /* Можно уменьшить размер шрифта для меток, если нужно */
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.form-contact input[type="text"],
+.form-mail input[type="text"] {
+  width: 100%;
+  padding: 4px 40px 4px 20px; /* Отступы для значка и квадратика */
+  background-color: #f3f3f3;
+  height: 45px;
+  box-sizing: border-box;
+  border: none;
+  font-size: 14px; /* Уменьшаем размер шрифта */
+  font-weight: 300; /* Делаем шрифт тоньше */
+}
+
+.form-mail {
+  max-width: 500px;
+  width: 100%;
+}
+
+.form-mail label {
+  margin-right: 10px; /* Отступ между меткой и инпутом */
+  width: 150px; /* Ширина метки */
+  text-align: center; /* Выравнивание текста по левому краю */
+  white-space: nowrap;
+  align-items: center;
+}
+
+.form-mail input[type="text"] {
+  width: 100%; /* Инпут занимает всю ширину */
+  padding: 4px;
+  background-color: #f3f3f3; /* Цвет фона */
+  height: 40px;
+  box-sizing: border-box;
+  border: none;
+}
+
+.input-wrapper1 {
+  position: relative;
+  max-width: 100%;
+  width: 250px;
+}
+
+.input-wrapper2 {
+  position: relative;
+  width: 250px;
+}
+
+.input-wrapper1 input[type="text"] {
+  width: 100%;
+  padding: 4px 40px 4px 20px; /* Отступы для значка и квадратика */
+  background-color: #f3f3f3;
+  height: 45px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.input-wrapper2 input[type="text"] {
+  width: 100%;
+  padding: 4px 40px 4px 20px; /* Отступы для значка и квадратика */
+  background-color: #f3f3f3;
+  height: 45px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+
+.input-wrapper1 .icon {
+  position: absolute;
+  left: 207px; /* Оставляем отступ слева от поля ввода */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;  /* Размер квадратика */
+  height: 40px; /* Размер квадратика */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;  /* Закругленные углы */
+  z-index: 1000;
+}
+
+.input-wrapper2 .icon {
+  position: absolute;
+  left: 207px; /* Оставляем отступ слева от поля ввода */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;  /* Размер квадратика */
+  height: 40px; /* Размер квадратика */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;  /* Закругленные углы */
+  z-index: 1000;
+}
+
+
+.input-wrapper1 .icon svg {
+  width: 24px;   /* Размер иконки */
+  height: 24px;  /* Размер иконки */
+  fill: white;    /* Белый цвет иконки */
+  stroke: black;  /* Черный контур иконки */
+  margin-left: 215px;
+}
+
+.input-wrapper2 .icon svg {
+  width: 24px;   /* Размер иконки */
+  height: 24px;  /* Размер иконки */
+  fill: white;    /* Белый цвет иконки */
+  stroke: black;  /* Черный контур иконки */
+}
+
+.input-wrapper1 .box1 {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 45px;
+  height: 45px;
+  background-color: #D3D3D3;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+.input-wrapper2 .box2 {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 45px;
+  height: 45px;
+  background-color: #D3D3D3;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.icon-email svg {
+  position: absolute;
+  left: 215px;
+  top: 10px;
+  z-index: 1111111;
+}
+
+.icon-phone svg {
+  position: absolute;
+  left: 215px;
+  top: 10px;
+  z-index: 1111111;
+}
+
+.form-row, .form-row2 {
+  display: flex; /* Выставляем инпуты в строку */
+  justify-content: space-around; /* Распределяем инпуты по ширине */
+  gap: 20px;
+  max-width: 1150px;
+  width: 100%; /* Максимальная ширина для инпутов */
+}
+
+.form-row2 {
+  display: flex;
+  justify-content: center; /* Центрируем по горизонтали */
+  align-items: center; /* Центрируем по вертикали */
+  gap: 20px;
+  max-width: 425px;
+  width: 100%;
+}
+
+.form-row {
+  width: 1000px;
+}
+
+.mesta {
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 1000px;
+  margin: 0 auto;
+  font-weight: bold;
+  text-transform: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.radioknopki {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 55px;
+}
+
+.square {
+  width: 150px; /* ограничиваем ширину квадрата */
+  word-break: break-word;
+  white-space: normal;
+}
+
+.square, .square3, .square4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px; /* фиксированная ширина для квадрата */
+  height: 150px; /* фиксированная высота для квадрата */
+  background-color: transparent;
+  padding: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  gap: -50px;
+  text-align: center;
+  text-transform: none;
+}
+
+.checkbox {
+  display: none; 
+}
+
+.checkbox1:checked + .checkmark::after, 
+.checkbox2:checked + .checkmark2::after, 
+.checkbox3:checked + .checkmark3::after, 
+.checkbox4:checked + .checkmark4::after {
+  content: '\2713'; /* Черная галочка */
+  font-size: 40px;
+  color: black; 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.checkmark, .checkmark2, .checkmark3, .checkmark4 {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  position: relative;
+  background-color: #f3f3f3;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.square, .square3, .square4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px; 
+  height: 150px;
+  background-color: transparent;
+  padding: 0;
+  margin: 0 auto;
+  cursor: pointer;
+  text-align: center;
+  text-transform: none;
+  word-wrap: break-word;
+}
+
+.square span {
+  font-size: 16px;
+  color: #333;
+}
+
+.radioknopki {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 55px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.radioknopki label span {
+  text-transform: none;
+}
+
+.radioknopki label:nth-child(3) span, 
+.radioknopki label:nth-child(2) span, 
+.radioknopki label:nth-child(4) span {
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  word-wrap: break-word;
+  background-color: #f3f3f3;
+  white-space: normal;
+}
+
+.radioknopki label:nth-child(2) span {
+  width: 60px;
+}
+
+.radioknopki label:nth-child(4) span {
+  width: 65px;
+}
+
+.otzyv-form {
+  max-width: 1000px;
+  margin: 0 auto; /* Центрирует форму */
+  padding: 20px;
+  background-color: white;
+}
+
+.otzyv-form h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 24px;
+  color: #333;
+}
+
+.otzyv-textarea {
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  font-size: 16px;
+  resize: none;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  background-color: #f3f3f3;
+  border: none; 
+  outline: none; 
+}
+
+.otzyv-submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  width: 450px;
+  padding: 12px;
+  background-color: #8ab6d6;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-weight: bold;
+  height: 60px;
+  font-size: 18px;
+}
+
+.otzyv-submit:hover {
+  background-color: #0056b3;
+  border: none;  
+  outline: none; 
+}
+
+.submit-container {
+  display: flex;
+  align-items: center; /* Центрирует текст по вертикали с кнопкой */
+  gap: 10px; /* Добавляет пространство между кнопкой и текстом */
+  justify-content: space-between;
+}
+
+.required-text {
+  font-size: 14px;
+  color: black; 
+  font-weight: normal;
+}
+
+input:focus {
+    border: none;  
+    outline: none; 
+}
+
+.blockred {
+   position: fixed; /* Фиксируем его на экране */
+   top: 0;
+   margin-left: 40px;
+   width: 1180px;;
+   height: 100%;
+   background-color: white; /* Красный фон */
+   z-index: -9999;
+   box-shadow: -10px 0 15px rgba(0, 0, 0, 0.1), 10px 0 15px rgba(0, 0, 0, 0.1);
+   max-width: 100%;
+}
+
+.burger-menu {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.close-icon {
+  display: none;
+}
+
+
+
+@media (max-width: 1100px) {
+* {
+  box-sizing: border-box;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black; /* Устанавливаем цвет черным для посещенных ссылок */
+}
+
+
+h1, h2, h3, p {
+  text-transform: uppercase;
+}
+
+.container, .centrblock, .footer, .centrsite {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+body {
+  box-sizing: border-box;
+  padding: 0;
+   width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+  background-image: url('img/noice.jpg');
+  background-repeat: repeat;
+}
+
+header {
+  background-color: white;
+  margin: 0 auto;
+  max-width: 800px;
+  width: 100%;
+  margin-left: 0;
+  position: absolute;
+  z-index: 2000;
+  height: 50px;
+}
+
+
+.phtanv.inactive {
+  color: gray; /* Серый цвет для неактивной ссылки */
+  pointer-events: none; /* Делаем ссылку неактивной */
+  text-decoration: none; /* Убираем подчеркивание */
+}
+
+.site-navigation {
+  background-color: white;
+  display: flex;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  list-style-type: none;
+  width: 100%;  /* Ширина 100% для .main-navigation */
+  height: 20px; /* Высота для .main-navigation */
+  margin-left: 0;
+}
+
+.site-navigation2 {
+  background-color: white;
+  display: flex;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  list-style-type: none;
+  width: 50%;  /* Ширина 100% для .main-navigation */
+  height: 20px; /* Высота для .main-navigation */
+  margin-left: 100px;
+  white-space: nowrap; 
+  gap: 30px;
+}
+
+.site-navigation1 {
+  display: flex;
+  margin-left: 120px;
+  white-space: nowrap;
+  margin-left: 50px;
+}
+
+.logoone {
+  width: 100%;
+  height: 180px;
+  position: absolute;
+  z-index: 5000;
+  right: 483px;
+  top: -44px;
+  display: none;
+}
+
+.main-navigation {
+  position: absolute;
+  z-index: 1000000;
+  left: 345px;
+  padding: 0;
+  margin: 0;
+  top: -2px; 
+  margin: 0 auto;
+}
+
+.site-navigation li {
+  margin-left: 15px;
+  font-weight: bold;
+}
+
+.site-navigation2 li {
+  margin-right: 5px;
+}
+
+.logo-main {
+  position: absolute;
+  z-index: 100;
+}
+
+.container {
+  max-width: 800px;
+  width: 100%;
+  height: 410px; /* Высота окна */
+  overflow: hidden; /* Скрываем части фона, выходящие за пределы контейнера */
+  background-image: url('img/bg-back-desktop@2x.jpg'); /* Фоновое изображение */
+  background-size: 125%; /* Масштабируем фон внутри контейнера */
+  background-position: center 150%;
+  background-repeat: no-repeat; /* Не повторяем изображение */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.centrsite svg {
+  width: 800px;   
+  height: auto;
+  margin-top: 262px;
+}
+
+.centrsite {
+  width: 100%;   
+  max-width: 800px; /* Ограничение ширины контейнера, если нужно */
+  margin-top: 247px;
+  margin: 0 auto;
+}
+
+.site-navigation a {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px; /* Укажите нужный размер шрифта */
+  text-decoration: none; /* Убирает подчеркивание, если нужно */
+  color: black; /* Укажите нужный цвет текста */
+  text-transform: uppercase;
+}
+
+.site-navigation a:hover {
+  color: #007bff; /* Например, цвет при наведении */
+}
+
+.centrblock {
+  font-size: 13px;
+  background-color: white;
+  height: 290px;
+  width: 100%;   
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Это заставляет элементы располагаться по вертикали */
+  text-align: center;
+  margin-top: -55px;
+}
+
+.centrblock h2 {
+  font-size: 28px;
+  color: black;
+}
+
+.footer {
+  background-color: white;
+  display: flex;          /* Включаем Flexbox */
+  justify-content: space-between;  /* Расставляем блоки по бокам */
+  width: 100%;   
+  max-width: 800px;
+  margin: 0 auto;
+  height: 150px;
+  flex-grow: 1; /* Каждый блок растягивается на одинаковую ширину */
+  text-align: center;
+  line-height: 100px;
+  margin-top: 10px;
+}
+
+.footerblock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Это заставляет элементы располагаться по вертикали */
+  text-align: center;
+  width: 393.33%;
+  margin: 0 auto;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 23px;
+  padding: 0;
+}
+
+.social-button svg {
+  width: 30px; /* Убедитесь, что размеры иконок подходят */
+  height: 30px;
+  fill: black;  /* Белый цвет для иконки */
+}
+
+.social-button {
+  display: inline-block;
+  width: auto;
+  height: auto;
+}
+
+.footerblockcentr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 393.33%;
+  text-transform: uppercase;
+  font-size: 16px;
+  text-decoration: none;
+  gap: 5px;
+  line-height: 100px;
+  margin: 0 auto;
+}
+
+.social-icon i {
+  font-size: 20px;  /* Размер иконки */
+  color: white;  /* Цвет иконки */
+  padding: 10px;  /* Отступы внутри иконки */
+  transition: transform 0.3s ease;
+}
+
+.social-icon i:hover {
+  transform: scale(1.1);  /* Увеличение при наведении */
+}
+
+.social-icon:hover {
+  background-color: rgb(125, 167, 220);
+}
+
+.social-icon {
+  background-color: rgb(125, 187, 220);
+  display: flex;            /* Используем flexbox для выравнивания */
+  justify-content: center;  /* Центрируем иконку по горизонтали */
+  align-items: center;      /* Центрируем иконку по вертикали */
+}
+
+.footerblock h2 {
+  font-size: 25px;
+  margin-left: -10px;
+}
+
+.footerrightlink svg {
+  width: 40px;  /* Размер иконки */
+  height: 40px; /* Размер иконки */
+  transition: fill 0.3s ease; /* Плавное изменение цвета */
+  margin-top: 5px;
+}
+
+.icon-container:focus-within svg {
+  outline: none; /* Убираем стандартную область фокуса */
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2); /* Мягкая тень вокруг иконки */
+}
+
+.footerrightlink {
+  display: inline-flex;
+  align-items: center;
+  padding: 0;
+  text-decoration: none;
+}
+
+.footerblock2 {
+  width: 393.33%;
+  text-transform: uppercase;
+  font-size: 16px;
+  display: flex;
+  justify-content: center; /* Центрируем содержимое по горизонтали */
+  align-items: center;     /* Центрируем по вертикали */
+  text-align: center;
+  margin: 0 auto;
+}
+
+.footerrightlink {
+  display: flex;           /* Используем flexbox для выравнивания элементов внутри ссылки */
+  align-items: center;     /* Центрируем текст и иконку по вертикали */
+  text-decoration: none;
+  color: black;
+}
+
+.icon-container {
+  display: inline-block; /* Иконка остаётся в строке */
+  margin-left: 10px;     /* Это сдвигает иконку относительно текста */
+}
+
+.icon-container svg {
+  margin-bottom: -12px;
+}
+
+.footerrightlink .icon-container svg {
+  width: 40px;  /* Размер иконки */
+  height: 40px; /* Размер иконки */
+  transition: fill 0.3s ease; /* Плавное изменение цвета */
+}
+
+/* При наведении на иконку меняем её цвет */
+.footerrightlink .icon-container svg:hover {
+  fill: rgb(125, 187, 220);
+}
+
+.blockred {
+   position: fixed; /* Фиксируем его на экране */
+   top: 0;
+   margin: 0 auto;
+   margin-left: 0;
+   width: 100%;   
+   max-width: 800px;
+   height: 100%;
+   background-color: white;
+   z-index: -9999;
+   box-shadow: -10px 0 15px rgba(0, 0, 0, 0.1), 10px 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.container2 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: -25px;
+  padding: 20px;
+  width: 100%;   
+  max-width: 800px;
+}
+
+.left, .right {
+  width: 45%;
+  display: flex;
+  flex-direction: column; /* Элементы внутри .left будут располагаться по вертикали */
+  align-items: center;
+  height: 178px;
+}
+
+.separator {
+  width: 1px;
+  background-color: #D3D3D3;;
+  margin: 0 20px;
+  height: 200px;
+  max-height: 100%;
+}
+
+.form-group {
+  margin-bottom: -20px;
+  text-align: center;
+}
+
+.form-group label {
+  display: flex;
+  align-items: center;
+}
+
+.form-group2 {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.left .form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.left .form-group input[type="radio"] {
+  margin-right: 15px; /* Отступ между радиокнопкой и текстом */
+  width: 40px; /* Увеличиваем диаметр кружка */
+  height: 40px; /* Увеличиваем высоту кружка */
+  border-radius: 50%; /* Круглая форма */
+  appearance: none; /* Убираем стандартный стиль радио кнопки */
+  position: relative;
+  background-color: #f3f3f3;
+  border: none;
+}
+
+.left .form-group input[type="radio"]:checked {
+  background-color: #f3f3f3;
+}
+
+.left .form-group input[type="radio"]:checked::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 12px; /* Размер точки */
+  height: 12px; /* Размер точки */
+  border-radius: 50%; /* Круглая точка */
+  background-color: black;
+  transform: translate(-50%, -50%);
+}
+
+.left .form-group label {
+  font-size: 16px; /* Размер текста */
+  line-height: 20px;
+}
+
+.container2 .form-group label {
+  text-transform: none;
+  font-weight: bold;
+}
+
+.right .form-group2 input[type="text"] {
+    width: 100%; /* Инпут будет занимать 100% ширины родительского блока */
+    padding: 4px; /* Отступы внутри инпута */
+    background-color: #f3f3f3;
+    height: 40px;
+    box-sizing: border-box;
+    border: none;
+}
+
+#first-name, #last-name, #patronymic {
+    width: 100%;   
+    max-width: 800px;
+    margin-left: 0; /* Убираем отступ слева */
+    border: none;
+}
+
+.right .form-group2 {
+    display: flex;
+    align-items: center; /* Выравнивание по центру по вертикали */
+    margin-bottom: 27px; /* Отступ между строками */
+    border: none;
+}
+
+.right .form-group2 label {
+    margin-right: 10px; /* Отступ между меткой и инпутом */
+    width: 150px; /* Ширина метки, чтобы она не раздувала блок */
+    text-align: left; /* Выравнивание текста по левому краю */
+    border: none;
+}
+
+.right .form-group2 input[type="text"] {
+    width: 100%; /* Инпут будет занимать все доступное пространство */
+    padding: 4px;
+    background-color: #f3f3f3; 
+    height: 40px;
+    box-sizing: border-box;
+    border: none;
+}
+
+.contactsinform {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Центрируем все элементы */
+  gap: 20px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+h2 {
+  margin-bottom: 10px; /* Отступ между заголовком и формой */
+  text-align: center;
+}
+
+.form-contact, .form-mail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-contact label,
+.form-mail label {
+  width: 150px; /* Ширина метки */
+  text-align: right; /* Выравнивание текста по левому краю */
+  font-size: 14px; /* Можно уменьшить размер шрифта для меток, если нужно */
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.form-contact input[type="text"],
+.form-mail input[type="text"] {
+  width: 100%;
+  padding: 4px 40px 4px 20px; /* Отступы для значка и квадратика */
+  background-color: #f3f3f3;
+  height: 45px;
+  box-sizing: border-box;
+  border: none;
+  font-size: 14px; /* Уменьшаем размер шрифта */
+  font-weight: 300; /* Делаем шрифт тоньше */
+}
+
+.form-mail {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.form-mail label {
+  margin-right: 10px; /* Отступ между меткой и инпутом */
+  width: 150px; /* Ширина метки */
+  text-align: center; /* Выравнивание текста по левому краю */
+  white-space: nowrap;
+  align-items: center;
+}
+
+.form-mail input[type="text"] {
+  width: 100%; /* Инпут занимает всю ширину */
+  padding: 4px;
+  background-color: #f3f3f3; /* Цвет фона */
+  height: 40px;
+  box-sizing: border-box;
+  border: none;
+}
+
+.input-wrapper2 {
+  position: relative;
+  max-width: 250px;
+  width: 50%;
+}
+
+.input-wrapper2 input[type="text"] {
+  width: 100%;
+  padding: 4px 40px 4px 20px; /* Отступы для значка и квадратика */
+  background-color: #f3f3f3;
+  height: 45px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+
+.input-wrapper1 .icon {
+  position: absolute;
+  left: 207px; /* Оставляем отступ слева от поля ввода */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;  /* Размер квадратика */
+  height: 40px; /* Размер квадратика */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;  /* Закругленные углы */
+  z-index: 1000;
+}
+
+.input-wrapper2 .icon {
+  position: absolute;
+  left: 207px; /* Оставляем отступ слева от поля ввода */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;  /* Размер квадратика */
+  height: 40px; /* Размер квадратика */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;  /* Закругленные углы */
+  z-index: 1000;
+}
+
+
+.input-wrapper1 .icon svg {
+  width: 24px;   /* Размер иконки */
+  height: 24px;  /* Размер иконки */
+  fill: white;    /* Белый цвет иконки */
+  stroke: black;  /* Черный контур иконки */
+  margin-left: 215px;
+}
+
+.input-wrapper2 .icon svg {
+  width: 24px;   /* Размер иконки */
+  height: 24px;  /* Размер иконки */
+  fill: white;    /* Белый цвет иконки */
+  stroke: black;  /* Черный контур иконки */
+}
+
+.input-wrapper1 .box1 {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 45px;
+  height: 45px;
+  background-color: #D3D3D3;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+.input-wrapper2 .box2 {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 45px;
+  height: 45px;
+  background-color: #D3D3D3;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.icon-email svg {
+  position: absolute;
+  left: 215px;
+  top: 10px;
+  z-index: 1111111;
+}
+
+.icon-phone svg {
+  position: absolute;
+  left: 215px;
+  top: 10px;
+  z-index: 1111111;
+}
+
+.form-row, .form-row2 {
+  display: flex; /* Выставляем инпуты в строку */
+  justify-content: space-around; /* Распределяем инпуты по ширине */
+  gap: 20px;
+  width: 100%;   
+  max-width: 800px; /* Максимальная ширина для инпутов */
+}
+
+.form-row2 {
+  display: flex;
+  justify-content: center; /* Центрируем по горизонтали */
+  align-items: center; /* Центрируем по вертикали */
+  gap: 10px;
+  max-width: 425px; 
+  width: 100%;
+}
+
+.form-row {
+  width: 100%;
+  margin-left: -80px;
+  display: flex;
+  flex-direction: column;
+}
+
+.mesta {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 500px;
+  margin: 0 auto;
+  font-weight: bold;
+  text-transform: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.radioknopki {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  flex-wrap: wrap;
+  gap: 55px;
+}
+
+.square {
+  width: 150px; /* ограничиваем ширину квадрата */
+  word-break: break-word;
+  white-space: normal;
+}
+
+.square, .square3, .square4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px; /* фиксированная ширина для квадрата */
+  height: 150px; /* фиксированная высота для квадрата */
+  background-color: transparent;
+  padding: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  gap: -50px;
+  text-align: center;
+  text-transform: none;
+}
+
+.checkbox {
+  display: none; 
+}
+
+.checkbox1:checked + .checkmark::after, 
+.checkbox2:checked + .checkmark2::after, 
+.checkbox3:checked + .checkmark3::after, 
+.checkbox4:checked + .checkmark4::after {
+  content: '\2713'; /* Черная галочка */
+  font-size: 40px;
+  color: black; 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.checkmark, .checkmark2, .checkmark3, .checkmark4 {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  position: relative;
+  background-color: #f3f3f3;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.checkmark3 {
+  min-width: 48px;
+}
+
+.square, .square3, .square4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px; 
+  height: 150px;
+  background-color: transparent;
+  padding: 0;
+  margin: 0 auto;
+  cursor: pointer;
+  text-align: center;
+  text-transform: none;
+  word-wrap: break-word;
+  box-sizing: border-box;
+}
+
+.square span {
+  font-size: 16px;
+  color: #333;
+}
+
+.radioknopki {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0;
+  width: 100%;
+}
+
+.radioknopki label span {
+  text-transform: none;
+}
+
+.radioknopki label:nth-child(3) span, 
+.radioknopki label:nth-child(2) span, 
+.radioknopki label:nth-child(4) span {
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  word-wrap: break-word;
+  background-color: #f3f3f3;
+  white-space: normal;
+}
+
+.radioknopki label:nth-child(2) span {
+  width: 60px;
+}
+
+.radioknopki label:nth-child(3) span {
+  width: 30px;
+  margin-left: -5px;
+}
+
+.radioknopki label:nth-child(4) span {
+  width: 70px;
+}
+
+.otzyv-form {
+  width: 100%;   
+  max-width: 800px;
+  margin: 0 auto; /* Центрирует форму */
+  padding: 50px;
+  background-color: white;
+}
+
+.otzyv-form h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 24px;
+  color: #333;
+}
+
+.otzyv-textarea {
+  width: 90%;
+  height: 150px;
+  padding: 30px;
+  font-size: 16px;
+  resize: none;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  margin-left: -20px;
+  background-color: #f3f3f3;
+  border: none; 
+  outline: none; 
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.otzyv-submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 350px;
+  width: 100%;
+  padding: 12px;
+  background-color: #8ab6d6;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-weight: bold;
+  height: 60px;
+  font-size: 18px;
+  margin: 0 auto;
+  margin-left: 0;
+}
+
+
+.otzyv-submit:hover {
+  background-color: #0056b3;
+  border: none;  
+  outline: none; 
+}
+
+.submit-container {
+  display: flex;
+  align-items: center; /* Центрирует текст по вертикали с кнопкой */
+  gap: 10px; /* Добавляет пространство между кнопкой и текстом */
+  justify-content: center;
+  margin: 0 auto;
+  padding: 20px;
+  margin-left: 15px;
+}
+
+.required-text {
+  font-size: 14px;
+  color: black; 
+  font-weight: normal;
+  margin-right: 40px;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input:focus {
+  border: none;  
+  outline: none; 
+}
+
+.burger-menu {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.close-icon {
+  display: none;
+  }
+}
+
+
+@media (max-width: 768px) {
+.allblock {
+  width: 100%;
+  max-width: 350px;
+  font-size: 14px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+* {
+  box-sizing: border-box;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black; /* Устанавливаем цвет черным для посещенных ссылок */
+}
+
+h1, h2, h3, p {
+  text-transform: uppercase;
+}
+
+body {
+  box-sizing: border-box;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-image: url('img/noice.jpg');
+  background-repeat: repeat;
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: white;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 350px;
+  margin-left: 40px;
+  position: absolute;
+  z-index: 2000;
+  height: 50px;
+}
+
+.ssilkamain.inactive {
+  color: gray; /* Серый цвет для неактивной ссылки */
+  pointer-events: none; /* Делаем ссылку неактивной */
+  text-decoration: none; /* Убираем подчеркивание */
+  margin-left: 0;
+}
+
+.site-navigation {
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-sizing: border-box;
+  list-style-type: none;
+  max-width: 350px;
+  width: 100%;
+  height: 50px; 
+  margin: 0 auto;
+  margin-left: 0;
+  margin-top: -105px;
+  white-space: nowrap;
+  display: none;
+}
+
+.site-navigation li {
+  margin-left: 10px;
+}
+
+.site-navigation a {
+  display: block;
+  line-height: 20px; 
+  margin-left: -15px;
+}
+
+.site-navigation2 {
+  background-color: white;
+  display: flex;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  list-style-type: none;
+  width: 500px;  
+  height: 20px; /* Высота для .main-navigation */
+  margin-left: 160px;
+}
+
+.site-navigation1 {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 20px;
+  white-space: nowrap;
+}
+
+.logoone {
+  position: absolute;
+  width: 186px;
+  height: 155px;
+  top: -44px;
+  left: 49%;  /* Центрируем относительно родителя */
+  transform: translateX(-50%);  /* Корректируем для точного центрирования */
+  z-index: 5000;
+  display: none;
+}
+
+.main-navigation {
+  position: relative;
+  display: inline-block;
+  z-index: 1000;
+  left: -5px;
+  padding: 0;
+  margin-left: 180px;
+  top: -31px;
+  transform: translateX(-50%);
+}
+
+.main-navigation svg {
+  max-width: 350px;
+  width: 100%;
+  max-height: 100%;
+  margin-top: -120px;
+  margin-left: 0;
+}
+
+.site-navigation li {
+  margin-right: 30px;
+  font-weight: bold;
+}
+
+.site-navigation2 li {
+  margin-right: 25px;
+  font-size: 10px;
+}
+
+.logo-main {
+  font-size: 10px;
+  position: absolute;
+  z-index: 100;
+  transform: scale(0.5);
+}
+
+.logo-main svg {
+  transform: scale(0.3); 
+  margin-bottom: -50px;
+}
+
+.container {
+  width: 350px; /* Ширина окна */
+  overflow: hidden; /* Скрываем части фона, выходящие за пределы контейнера */
+  background-image: url('img/bg-back-mobile@2x.jpg'); /* Фоновое изображение */
+  background-size: 100%; /* Масштабируем фон внутри контейнера */
+  background-position: center 50%;
+  background-repeat: no-repeat; /* Не повторяем изображение */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 40px;
+  max-width: 100%;
+  height: 280px;
+}
+
+.centrsite svg {
+  width: 100%;   
+  height: auto;
+  position: relative;
+  margin-top: -93px;
+}
+
+.centrsite {
+  width: 350px;      /* Родительский контейнер занимает всю ширину */
+  max-width: 100%; /* Ограничение ширины контейнера, если нужно */
+  margin-top: 247px;
+  max-height: auto;
+}
+
+.site-navigation a {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px; /* Укажите нужный размер шрифта */
+  text-decoration: none; /* Убирает подчеркивание, если нужно */
+  color: black; /* Укажите нужный цвет текста */
+  text-transform: uppercase;
+}
+
+.site-navigation a:hover {
+  color: #007bff; /* Например, цвет при наведении */
+}
+
+.centrblock {
+  font-size: 13px;
+  background-color: white;
+  height: 290px;
+  margin-left: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Это заставляет элементы располагаться по вертикали */
+  text-align: center;
+  margin-top: -55px;
+  max-width: 100%;
+  padding: 30px;
+}
+
+.centrblock h2 {
+  font-size: 28px;
+  color: black;
+}
+
+
+.footer {
+  background-color: white;
+  display: flex;          /* Включаем Flexbox */
+  flex-direction: column;  /* Расставляем блоки по бокам */
+  max-width: 350px;
+  width: 100%;
+  margin: 0 auto;
+  height: 150px;
+  flex-grow: 1; /* Каждый блок растягивается на одинаковую ширину */
+  text-align: center;
+  line-height: 100px;
+  padding: 0;
+  margin-left: 40px;
+}
+
+.footerblock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Это заставляет элементы располагаться по вертикали */
+  text-align: center;
+  width: 393.33px;
+  margin-left: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 23px;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+}
+
+.social-button svg {
+  width: 30px; /* Убедитесь, что размеры иконок подходят */
+  height: 30px;
+  fill: black;  /* Белый цвет для иконки */
+}
+
+.social-button {
+  display: inline-block;
+  width: auto;
+  height: auto;
+}
+
+.footerblockcentr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 393.33px;
+  text-transform: uppercase;
+  font-size: 16px;
+  text-decoration: none;
+  gap: 5px;
+  line-height: 100px;
+  max-width: 100%;
+}
+
+.social-icon i {
+  font-size: 20px;  /* Размер иконки */
+  color: white;  /* Цвет иконки */
+  padding: 10px;  /* Отступы внутри иконки */
+  transition: transform 0.3s ease;
+}
+
+.social-icon i:hover {
+  transform: scale(1.1);  /* Увеличение при наведении */
+}
+
+.social-icon:hover {
+  background-color: rgb(125, 167, 220);
+}
+
+.social-icon {
+  background-color: rgb(125, 187, 220);
+  display: flex;            /* Используем flexbox для выравнивания */
+  justify-content: center;  /* Центрируем иконку по горизонтали */
+  align-items: center;      /* Центрируем иконку по вертикали */
+}
+
+.footerblock h2 {
+  font-size: 25px;
+  margin-left: -10px;
+}
+
+.footerrightlink svg {
+  width: 40px;  /* Размер иконки */
+  height: 40px; /* Размер иконки */
+  transition: fill 0.3s ease; /* Плавное изменение цвета */
+  margin-top: 5px;
+}
+
+.icon-container:focus-within svg {
+  outline: none; /* Убираем стандартную область фокуса */
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2); /* Мягкая тень вокруг иконки */
+}
+
+.footerrightlink {
+  display: inline-flex;
+  align-items: center;
+  padding: 0;
+  text-decoration: none;
+}
+
+.footerblock2 {
+  width: 393.33px;
+  text-transform: uppercase;
+  font-size: 16px;
+  display: flex;
+  justify-content: center; /* Центрируем содержимое по горизонтали */
+  align-items: center;     /* Центрируем по вертикали */
+  text-align: center;
+  max-width: 100%;
+  
+}
+
+.footerrightlink {
+  display: flex;           /* Используем flexbox для выравнивания элементов внутри ссылки */
+  align-items: center;     /* Центрируем текст и иконку по вертикали */
+  text-decoration: none;
+  color: black;
+}
+
+.icon-container {
+  display: inline-block; /* Иконка остаётся в строке */
+  margin-left: 30px;     /* Это сдвигает иконку относительно текста */
+}
+
+.icon-container svg {
+  margin-bottom: -12px;
+  margin-left: 30px;
+}
+
+.footerrightlink .icon-container svg {
+  width: 40px;  /* Размер иконки */
+  height: 40px; /* Размер иконки */
+  transition: fill 0.3s ease; /* Плавное изменение цвета */
+}
+
+/* При наведении на иконку меняем её цвет */
+.footerrightlink .icon-container svg:hover {
+  fill: rgb(125, 187, 220);
+}
+
+.blockred {
+   position: fixed; /* Фиксируем его на экране */
+   top: 0;
+   margin-left: 40px;
+   width: 350px;
+   height: 100%;
+   background-color: white;
+   z-index: -9999;
+   box-shadow: -10px 0 15px rgba(0, 0, 0, 0.1), 10px 0 15px rgba(0, 0, 0, 0.1);
+   max-width: 100%;
+   
+}
+
+.container2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-left: 40px;
+  max-width: 100%;
+  padding: 30px;
+}
+
+.left, .right {
+  width: 100%;
+  display: flex;
+  flex-direction: column; /* Элементы внутри .left будут располагаться по вертикали */
+  align-items: center;
+  height: 178px;
+}
+
+.separator {
+  width: 1px;
+  background-color: #D3D3D3;;
+  margin: 0 20px;
+  height: 200px;
+  max-height: 100%;
+  display: none;
+}
+
+.form-group {
+  margin-bottom: -20px;
+  text-align: center;
+}
+
+.form-group label {
+  display: flex;
+  align-items: center;
+}
+
+.form-group2 {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -20px;
+  margin-bottom: 30px;
+  margin-top: -30px;
+}
+
+.left .form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.left .form-group input[type="radio"] {
+  margin-right: 15px; /* Отступ между радиокнопкой и текстом */
+  width: 40px; /* Увеличиваем диаметр кружка */
+  height: 40px; /* Увеличиваем высоту кружка */
+  border-radius: 50%; /* Круглая форма */
+  appearance: none; /* Убираем стандартный стиль радио кнопки */
+  position: relative;
+  background-color: #f3f3f3;
+  border: none;
+}
+
+.left .form-group input[type="radio"]:checked {
+  background-color: #f3f3f3;
+}
+
+.left .form-group input[type="radio"]:checked::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 12px; /* Размер точки */
+  height: 12px; /* Размер точки */
+  border-radius: 50%; /* Круглая точка */
+  background-color: black;
+  transform: translate(-50%, -50%);
+}
+
+.left .form-group label {
+  font-size: 16px; /* Размер текста */
+  line-height: 20px;
+}
+
+.container2 .form-group label {
+  text-transform: none;
+  font-weight: bold;
+}
+
+
+.right .form-group2 input[type="text"] {
+    width: 100%; /* Инпут будет занимать 100% ширины родительского блока */
+    padding: 4px; /* Отступы внутри инпута */
+    background-color: #f3f3f3;
+    height: 40px;
+    box-sizing: border-box;
+    border: none;
+}
+
+#first-name, #last-name, #patronymic {
+    max-width: 100%; /* Убираем фиксированную максимальную ширину */
+    margin-left: 0; /* Убираем отступ слева */
+    border: none;
+}
+
+.right .form-group2 {
+    display: flex;
+    align-items: center; /* Выравнивание по центру по вертикали */
+    margin-bottom: 27px; /* Отступ между строками */
+    border: none;
+}
+
+.right .form-group2 label {
+    margin-right: 10px; /* Отступ между меткой и инпутом */
+    width: 150px; /* Ширина метки, чтобы она не раздувала блок */
+    text-align: left; /* Выравнивание текста по левому краю */
+    border: none;
+}
+
+.right .form-group2 input[type="text"] {
+    width: 100%; /* Инпут будет занимать все доступное пространство */
+    padding: 4px;
+    background-color: #f3f3f3; 
+    height: 40px;
+    box-sizing: border-box;
+    border: none;
+}
+
+.contactsinform {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Центрируем все элементы */
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto;
+  font-size: 12px;
+  margin-left: 30px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+h2 {
+  margin-bottom: 10px; /* Отступ между заголовком и формой */
+  text-align: center;
+}
+
+.form-contact, .form-mail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-contact label,
+.form-mail label {
+  width: 150px; /* Ширина метки */
+  text-align: right; /* Выравнивание текста по левому краю */
+  font-size: 13px; /* Можно уменьшить размер шрифта для меток, если нужно */
+  margin-right: 10px;
+  font-weight: bold;
+  display: flex;
+  justify-content: flex-start;
+  padding: 5px;
+}
+
+.form-contact input[type="text"],
+.form-mail input[type="text"] {
+  width: 100%;
+  padding: 4px 40px 4px 20px; /* Отступы для значка и квадратика */
+  background-color: #f3f3f3;
+  height: 45px;
+  box-sizing: border-box;
+  border: none;
+  font-size: 12px; /* Уменьшаем размер шрифта */
+  font-weight: 300; /* Делаем шрифт тоньше */
+}
+
+#formail {
+  width: 100%;
+  margin-left: -33px;
+}
+
+.form-mail {
+  width: 100%;
+}
+
+.form-contact {
+  width: 100%;
+}
+
+.form-contact label {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.form-mail label {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%; 
+  white-space: nowrap;
+  margin-left: -5px;
+}
+
+.form-mail input[type="text"] {
+  width: 100%; /* Инпут занимает всю ширину */
+  padding: 4px;
+  background-color: #f3f3f3; /* Цвет фона */
+  height: 40px;
+  box-sizing: border-box;
+  border: none;
+}
+
+.input-wrapper {
+  position: relative;
+  min-width: 170px;
+}
+
+.input-wrapper2 {
+  position: relative;
+  min-width: 153px;
+}
+
+.input-wrapper input[type="text"] {
+  width: 100%;
+  padding: 4px 40px 4px 20px; /* Отступы для значка и квадратика */
+  background-color: #f3f3f3;
+  height: 45px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 5px;
+  font-size: 10px;
+  font-weight: 300;
+}
+
+.input-wrapper .icon-phone {
+  position: absolute;
+  left: 305px; /* Оставляем отступ слева от поля ввода */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;  /* Размер квадратика */
+  height: 40px; /* Размер квадратика */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;  /* Закругленные углы */
+  z-index: 1000;
+}
+
+.icon-phone svg {
+  margin-left: -65px;
+}
+
+.icon-email svg {
+  margin-left: -97px;
+}
+
+.input-wrapper .icon-email {
+  position: absolute;
+  left: 255px; /* Оставляем отступ слева от поля ввода */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;  /* Размер квадратика */
+  height: 40px; /* Размер квадратика */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;  /* Закругленные углы */
+  z-index: 1000;
+}
+
+#formail {
+  height: 45px;
+}
+
+label[for="formail"] {
+  white-space: normal;
+}
+
+.input-wrapper .icon svg {
+  width: 24px;   /* Размер иконки */
+  height: 24px;  /* Размер иконки */
+  fill: white;    /* Белый цвет иконки */
+  stroke: black;  /* Черный контур иконки */
+}
+
+.input-wrapper .box {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 45px;
+  height: 45px;
+  background-color: #D3D3D3;
+  border: none;
+  margin: 0;
+  padding: 0;
+  flex: 1;
+}
+
+.form-row, .form-row2 {
+  display: flex; /* Выставляем инпуты в строку */
+  justify-content: space-around; /* Распределяем инпуты по ширине */
+  gap: 20px;
+  width: 350px;
+  max-width: 100%; /* Максимальная ширина для инпутов */
+}
+
+.form-row2 {
+  display: flex;
+  justify-content: center; /* Центрируем по горизонтали */
+  align-items: center; /* Центрируем по вертикали */
+  gap: 20px;
+  max-width: 100%; 
+  width: 425px;
+}
+
+.form-row {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.mesta {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  font-weight: bold;
+  text-transform: none;
+  align-items: center;
+  justify-content: center;
+  margin-left: 40px;
+  gap: 1px;
+}
+
+.mesta h2 {
+  font-size: 18px;
+}
+
+.radioknopki {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: -45px;
+  margin: 0 auto;
+}
+
+.square, .square3, .square4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px; /* фиксированная ширина */
+  height: 150px; /* фиксированная высота для квадрата */
+  background-color: transparent;
+  padding: 0; /* убрал padding снаружи */
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.checkbox {
+  display: none; 
+}
+
+.checkbox:checked + .checkmark::after {
+  content: '\2713';
+  font-size: 40px;
+  color: black; /* Черная галочка */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.checkmark, .checkmark3, .checkmark4 {
+  width: 50px; 
+  height: 50px;
+  display: inline-block;
+  position: relative;
+  background-color: #f3f3f3;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.square span {
+  font-size: 16px;
+  color: #333;
+}
+
+.square span, .square {
+  text-transform: none; 
+}
+
+/* Добавляем отступ только для текста внутри квадрата с "Слайд-парк" */
+.radioknopki label:nth-child(3) span {
+  margin-left: 10px; /* Отступ слева */
+  margin-top: 10px;  /* Отступ сверху */
+  margin-right: 10px; /* Отступ справа */
+  margin-bottom: 10px; /* Отступ снизу */
+  word-wrap: break-word;
+  background-color: #f3f3f3;
+  white-space: normal;
+  width: 50px;
+  margin-left: 0px;
+}
+
+.radioknopki label:nth-child(2) span {
+  margin-left: 10px; /* Отступ слева */
+  margin-top: 10px;  /* Отступ сверху */
+  margin-right: 10px; /* Отступ справа */
+  margin-bottom: 10px; /* Отступ снизу */
+  word-wrap: break-word;
+  background-color: #f3f3f3;
+  white-space: normal;
+  width: 55px;
+  margin-left: 0px;
+}
+
+.radioknopki label:nth-child(4) span {
+  margin-left: 10px; /* Отступ слева */
+  margin-top: 10px;  /* Отступ сверху */
+  margin-right: 10px; /* Отступ справа */
+  margin-bottom: 10px; /* Отступ снизу */
+  word-wrap: break-word;
+  background-color: #f3f3f3;
+  white-space: normal;
+  width: 70px;
+  margin-left: 0px;
+}
+
+
+.otzyv-form {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto; /* Центрирует форму */
+  padding: 20px;
+  background-color: white;
+  margin-left: 65px;
+}
+
+.otzyv-form h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 24px;
+  color: #333;
+}
+
+.otzyv-textarea {
+  display: flex;
+  align-items: center; /* Центрирует текст по вертикали с кнопкой */
+  justify-content: center;
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  font-size: 16px;
+  resize: none;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  background-color: #f3f3f3;
+  border: none; 
+  outline: none; 
+}
+
+.otzyv-submit {
+  display: flex;
+  align-items: center; /* Центрирует текст по вертикали с кнопкой */
+  justify-content: center;
+  background-color: #8ab6d6;
+  color: white;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: bold;
+  height: 60px;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  flex-grow: 1;
+  margin-left: -60px;
+}
+
+.otzyv-submit:hover {
+  background-color: #0056b3;
+}
+
+.submit-container {
+  display: flex;
+  align-items: center; /* Центрирует текст по вертикали с кнопкой */
+  justify-content: center;
+  width: 100%;
+  margin-top: 20px;
+  margin-left: 30px;
+  flex-grow: 1;
+}
+
+.required-text {
+  display: flex;
+  align-items: center; /* Центрирует текст по вертикали с кнопкой */
+  justify-content: center;
+  font-size: 12px;
+  color: black; 
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  display: none;
+}
+
+input:focus {
+    border: none;  
+    outline: none; 
+}
+
+.burger-wrapper {
+  display: none;
+}
+
+.burger-menu.hidden {
+    display: none;
+}
+
+.close-icon.hidden {
+    display: none;
+}
+
+.mobile-menu-container {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.mobile-menu-container.active .close-icon {
+  display: block; /* Показываем крестик */
+}
+
+.mobile-menu-container.open {
+    display: block; /* Показываем, когда оно активировано */
+    top: 0;
+}
+
+/* Скрытое мобильное меню */
+.mobile-menu {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(125, 187, 220);
+  left: 0;
+  width: 100%;
+  text-align: center;
+  display: block;
+  list-style: none;
+  margin-top: -210px;
+}
+
+.mobile-menu-container.active {
+  display: block;
+}
+
+.mobile-menu-container.open {
+    display: block; /* Показываем мобильное меню, когда оно открыто */
+}
+
+.burger-wrapper {
+  display: block;
+}
+
+.mobile-menu li {
+  padding: 0;
+  border-top: 1px solid #808080;
+}
+
+.mobile-menu li a {
+  display: block;
+  padding: 17px 0;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.mobile-menu li a:hover {
+  background-color: rgb(125, 147, 220);
+}
+
+.inactive {
+  pointer-events: none;  /* Отключаем возможность клика */
+  color: #ccc;           /* Меняем цвет на серый, чтобы визуально показать, что она неактивна */
+  text-decoration: none;  /* Убираем подчеркивание, чтобы она выглядела как обычный текст */
+  cursor: not-allowed;   /* Меняем курсор на "недоступно" */
+}
+
+.inactive:hover {
+  background-color: transparent; /* Убираем изменения при наведении */
+}
+
+.close-icon {
+  display: block;
+  position: absolute; /* Для абсолютного позиционирования */
+  top: -210px; /* Расстояние от верхнего края */
+  right: 5px; /* Расстояние от правого края */
+  font-size: 35px; /* Размер крестика */
+  color: white;
+  z-index: 20002;
+  background-color: transparent;
+  cursor: pointer;
+  height: 40px;
+  font-weight: bold;
+  border: none;
+}
+
+
+/* Стиль для гамбургера */
+.burger-menu {
+  height: 0;
+  background: none;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 2001;
+  color: rgb(125, 187, 220);
+  padding: 0;
+  margin-top: -202px;
+  margin-left: 310px;
+  position: absolute;
+  font-weight: bold;
+  display: block;
+}
+
+.burger-menu .burger-icon {
+  display: inline-block;
+  transform: scaleX(1.2);
+}
+
+.burger-menu.hidden {
+    display: none;
+}
+
+/* При активном состоянии гамбургера показываем крестик и прячем гамбургер */
+.burger-menu.active .burger-icon {
+  display: none; /* Прячем гамбургер */
+}
+
+.mobile-menu.active {
+  display: block; /* Показываем меню при активации */
+}
+
+.main-navigation {
+  height: 100px;
+  margin-top: 100px;
+}
+
+.site-navigation.active {
+    display: block;
+}
+
+
+.mobile-menu li:nth-child(3) a.inactive {
+  background-color: #ccc;
+  color: white;
+  cursor: not-allowed;
+}
+
+.mobile-menu.open {
+  display: block; /* Меню будет показываться, когда оно активировано */
+}
+
+.mobile-menu.open + .burger-menu {
+  display: none; /* Прячем гамбургер при открытом меню */
+}
+
+.mobile-menu.open + .burger-menu + .close-icon {
+  display: block; /* Показываем крестик, когда меню открыто */
+}
+
+.mobile-menu-container.open {
+  display: block;
+}
+
+/* Класс для сдвига контента */
+.shift-content-down {
+  margin-top: 210px;  /* Увеличьте это значение в зависимости от высоты вашего меню */
+  transition: margin-top 0.3s ease; /* Плавный переход */
+}
+
+.site-navigation {
+    display: none;
+  }
+}
+

@@ -1,0 +1,538 @@
+* {
+  box-sizing: border-box
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black; /* Устанавливаем цвет черным для посещенных ссылок */
+}
+
+h1, h2, h3, p {
+  text-transform: uppercase;
+}
+
+body {
+  box-sizing: border-box
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-image: url('img/noice.jpg');
+  background-repeat: repeat;
+}
+
+header {
+  background-color: white;
+  margin: 0;
+  max-width: 100%;
+  width: 1180px;
+  margin-left: 40px;
+  position: absolute;
+  z-index: 200;
+  max-height: 50px;
+}
+
+.ssilkamain.inactive {
+  color: gray; /* Серый цвет для неактивной ссылки */
+  pointer-events: none; /* Делаем ссылку неактивной */
+  text-decoration: none; /* Убираем подчеркивание */
+}
+
+.site-navigation {
+  background-color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  box-sizing: border-box;
+  list-style-type: none;
+  width: 100%;  
+  height: 20px; 
+  max-width: 100%;
+  overflow: hidden;
+  margin-top: -74px;
+}
+
+.site-navigation li {
+  white-space: nowrap; /* Чтобы текст не переносился и не увеличивал высоту */
+}
+
+.site-navigation a {
+  display: block;
+  line-height: 20px; /* Чтобы текст оставался в пределах заданной высоты */
+}
+
+.site-navigation2 {
+  background-color: white;
+  display: flex;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  list-style-type: none;
+  width: 100%;  /* Ширина 100% для .main-navigation */
+  height: 20px; /* Высота для .main-navigation */
+}
+
+.site-navigation1 {
+  display: flex;
+  margin-left: 120px;
+  white-space: nowrap;
+}
+
+.logoone {
+  position: absolute;
+  max-width: 100%;
+  max-height: auto;
+  width: 225px;
+  height: 180px;
+  position: absolute;
+  z-index: 5000;
+  right: 490px;
+  top: -44px;
+}
+
+.main-navigation {
+  position: relative;
+  display: inline-block;
+  z-index: 1000;
+  left: 49%;
+  padding: 0;
+  margin: 0;
+  top: -2px;
+  max-width: 100%;
+  max-height: auto;
+  transform: translateX(-50%);
+}
+
+.main-navigation svg {
+  max-width: 100%;  /* Изменяет размер SVG */
+  max-height: 100%;
+}
+
+.site-navigation li {
+  margin-left: 50px;
+  font-weight: bold;
+}
+
+.site-navigation2 li {
+  margin-right: 90px;
+}
+
+.logo-main {
+  position: absolute;
+  z-index: 100;
+  max-width: 100%;
+  max-height: auto;
+}
+
+.container {
+  max-width: 100%;
+  max-height: auto;
+  width: 1180px; /* Ширина окна */
+  height: 610px; /* Высота окна */
+  overflow: hidden; /* Скрываем части фона, выходящие за пределы контейнера */
+  background-image: url('img/bg-back-desktop@2x.jpg'); /* Фоновое изображение */
+  background-size: 100%; /* Масштабируем фон внутри контейнера */
+  background-position: center; /* Центрируем фон внутри контейнера */
+  background-repeat: no-repeat; /* Не повторяем изображение */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 40px;
+}
+
+.centrsite svg {
+  max-width: 100%;
+  width: 1220px;   
+  height: auto;
+}
+
+.centrsite {
+  width: 1220px;      /* Родительский контейнер занимает всю ширину */
+  max-width: 100%; /* Ограничение ширины контейнера, если нужно */
+  margin-top: 447px;
+  
+}
+
+.site-navigation a {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px; /* Укажите нужный размер шрифта */
+  text-decoration: none; /* Убирает подчеркивание, если нужно */
+  color: black; /* Укажите нужный цвет текста */
+  text-transform: uppercase;
+}
+
+.site-navigation a:hover {
+  color: #007bff; /* Например, цвет при наведении */
+}
+
+.centrblock {
+  font-size: 13px;
+  background-color: white;
+  height: 200px;
+  margin: 0;
+  width: 1180px;
+  margin-left: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Это заставляет элементы располагаться по вертикали */
+  text-align: center;
+  margin-top: -55px;
+  max-width: 100%;
+  max-height: auto;
+}
+
+
+.centrblock2 {
+  display: flex;          /* Включаем Flexbox */
+  justify-content: space-between;  /* Расставляем блоки по бокам */
+  width: 1180px;
+  margin-left: 40px; 
+  max-width: 100%;
+  max-height: auto;         
+}
+
+.blueblock {
+  width: 35%;             /* Первый блок будет занимать 30% ширины */
+  background-color: rgb(125, 187, 220);  /* Пример фона для первого блока */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Это заставляет элементы располагаться по вертикали */
+  text-align: center;
+  color: white;
+  font-size: 14px;
+}
+
+.blueblockpic {         
+  width: 70%; 
+  max-height: auto;
+  height: 250px;        
+  overflow: hidden; 
+  position: relative;
+}
+
+.blueblockpic img {
+  width: 100%;            /* Изображение будет растягиваться по ширине блока */
+  height: 100%;           /* Сохраняем пропорции изображения */
+  object-fit: cover;      /* Изображение заполняет контейнер, обрезая лишнее */
+  object-position: center;
+}
+
+.blocker {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Это заставляет элементы располагаться по вертикали */
+  text-align: center;
+  width: 1180px;
+  margin-left: 40px;
+  max-width: 100%;
+  max-height: auto;
+}
+
+.secondblock {
+  background-color: white;
+  display: flex;          /* Включаем Flexbox */
+  justify-content: space-between;  /* Расставляем блоки по бокам */
+  width: 1180px;
+  margin-left: 40px;
+  height: 300px;
+  font-size: 13px;
+  flex-grow: 1; /* Каждый блок растягивается на одинаковую ширину */
+  text-align: center;
+  max-width: 100%;
+  max-height: auto;
+}
+
+.blueblock2 {
+  width: 35%;             /* Первый блок будет занимать 30% ширины */
+  background-color: rgb(125, 187, 220);  /* Пример фона для первого блока */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Это заставляет элементы располагаться по вертикали */
+  text-align: center;
+  color: white;
+  font-size: 14px;
+}
+
+.centrblock3 {
+  display: flex;          /* Включаем Flexbox */
+  justify-content: space-between;  /* Расставляем блоки по бокам */
+  width: 1180px;
+  margin-left: 40px;
+  max-width: 100%;
+  max-height: auto;
+}
+
+.blueblockpic2 {
+  width: 70%;  
+  max-height: auto;
+  height: 250px;          /* Устанавливаем размер окошка */
+  overflow: hidden;       /* Обрезаем все, что выходит за пределы контейнера */
+  position: relative;          /* Устанавливаем размер окошка */
+}
+
+.blueblockpic2 img {
+  width: 800px;            /* Изображение будет растягиваться по ширине блока */
+  height: 100%; 
+  max-width: 100%;
+  max-height: auto;         
+  object-fit: cover;      /* Изображение заполняет контейнер, обрезая лишнее */
+  object-position: center;           /* Сохраняем пропорции изображения */
+}
+
+.secondblock2 {
+  background-color: #f5f5f5;
+  display: flex;          /* Включаем Flexbox */
+  justify-content: space-between;  /* Расставляем блоки по бокам */
+  width: 1180px;
+  margin-left: 40px;
+  height: 250px;
+  font-size: 13px;
+  flex-grow: 1; /* Каждый блок растягивается на одинаковую ширину */
+  text-align: center;
+  max-width: 100%;
+  max-height: auto;
+}
+
+.blocker2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Это заставляет элементы располагаться по вертикали */
+  text-align: center;
+  width: 1180px;
+  margin-left: 40px;
+  max-width: 100%;
+  max-height: auto;
+}
+
+.btn {
+  background-color: rgb(125, 187, 220);  
+  color: white;               /* Белый текст */
+  border: none;               /* Убираем границу */
+  padding: 15px 32px;         /* Отступы внутри кнопки */
+  text-align: center;         /* Выравнивание текста */
+  text-decoration: none;      /* Убираем подчеркивание */
+  display: inline-block;      /* Делаем кнопку строчным элементом */
+  font-size: 18px;            /* Размер шрифта */
+  cursor: pointer;           /* Курсор при наведении */
+  width: 500px;
+  height: 170px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: rgb(125, 147, 220);  /* Темно-зеленый фон при наведении */
+}
+
+.pforblock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Это заставляет элементы располагаться по вертикали */
+  text-align: center;
+  width: 1180px;
+  margin-left: 40px;
+  height: 300px;
+  background-color: white;
+  max-width: 100%;
+  max-height: auto;
+}
+
+.pforblock h2 {
+  font-size: 25px;
+  margin-top: 90px;
+}
+
+.pforblock p {
+  font-size: 14px;
+  margin-bottom: 50px;
+}
+
+.pforblock .btn {
+  margin-bottom: 100px;
+}
+
+.mapps {
+  margin-left: 40px;
+  width: 1180px;  /* 100% ширины родительского контейнера */
+  height: 370px;
+  border: none;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.location__map-frame {
+  width: 100%;  /* Ширина на 100% */
+  height: 100%;  /* Высота на 100% от родительского контейнера */
+  max-width: 100%;
+  max-height: 100%;
+  border: none;
+}
+
+.footer {
+  background-color: white;
+  display: flex;          /* Включаем Flexbox */
+  justify-content: space-between;  /* Расставляем блоки по бокам */
+  width: 1179px;
+  margin: 0 auto;
+  height: 150px;
+  flex-grow: 1; /* Каждый блок растягивается на одинаковую ширину */
+  text-align: center;
+  line-height: 100px;
+  margin-top: 10px;
+  max-width: 100%;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.footerblock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Это заставляет элементы располагаться по вертикали */
+  text-align: center;
+  width: 393.33px;
+  margin-left: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 23px;
+  margin: 0;
+  padding: 0;
+}
+
+.social-button svg {
+  width: 30px; /* Убедитесь, что размеры иконок подходят */
+  height: 30px;
+  fill: black;  /* Белый цвет для иконки */
+}
+
+.social-button {
+  display: inline-block;
+  width: auto;
+  height: auto;
+}
+
+.footerblockcentr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 393.33px;
+  text-transform: uppercase;
+  font-size: 16px;
+  text-decoration: none;
+  gap: 5px;
+  line-height: 100px;
+}
+
+.social-icon i {
+  font-size: 20px;  /* Размер иконки */
+  color: white;  /* Цвет иконки */
+  padding: 10px;  /* Отступы внутри иконки */
+  transition: transform 0.3s ease;
+}
+
+.social-icon i:hover {
+  transform: scale(1.1);  /* Увеличение при наведении */
+}
+
+.social-icon:hover {
+  background-color: rgb(125, 167, 220);
+}
+
+.social-icon {
+  background-color: rgb(125, 187, 220);
+  display: flex;            /* Используем flexbox для выравнивания */
+  justify-content: center;  /* Центрируем иконку по горизонтали */
+  align-items: center;      /* Центрируем иконку по вертикали */
+}
+
+.footerblock h2 {
+  font-size: 25px;
+  margin-left: -10px;
+}
+
+.footerrightlink svg {
+  width: 40px;  /* Размер иконки */
+  height: 40px; /* Размер иконки */
+  transition: fill 0.3s ease; /* Плавное изменение цвета */
+  margin-top: 5px;
+}
+
+.icon-container:focus-within svg {
+  outline: none; /* Убираем стандартную область фокуса */
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2); /* Мягкая тень вокруг иконки */
+}
+
+.footerrightlink {
+  display: inline-flex;
+  align-items: center;
+  padding: 0;
+  text-decoration: none;
+}
+
+.footerblock2 {
+  width: 393.33px;
+  text-transform: uppercase;
+  font-size: 16px;
+  display: flex;
+  justify-content: center; /* Центрируем содержимое по горизонтали */
+  align-items: center;     /* Центрируем по вертикали */
+  text-align: center;
+  max-width: 100%;
+  max-height: auto;
+}
+
+.footerrightlink {
+  display: flex;           /* Используем flexbox для выравнивания элементов внутри ссылки */
+  align-items: center;     /* Центрируем текст и иконку по вертикали */
+  text-decoration: none;
+  color: black;
+}
+
+.icon-container {
+  display: inline-block; /* Иконка остаётся в строке */
+  margin-left: 10px;     /* Это сдвигает иконку относительно текста */
+}
+
+.icon-container svg {
+  margin-bottom: -12px;
+}
+
+.footerrightlink .icon-container svg {
+  width: 40px;  /* Размер иконки */
+  height: 40px; /* Размер иконки */
+  transition: fill 0.3s ease; /* Плавное изменение цвета */
+}
+
+/* При наведении на иконку меняем её цвет */
+.footerrightlink .icon-container svg:hover {
+  fill: rgb(125, 187, 220);
+}
+
+.footerrightlink .icon-container svg {
+  width: 40px;  /* Размер иконки */
+  height: 40px; /* Размер иконки */
+  transition: fill 0.3s ease; /* Плавное изменение цвета */
+}
+
+/* При наведении на иконку меняем её цвет */
+.footerrightlink .icon-container svg:hover {
+  fill: rgb(125, 187, 220);
+}
+
+.blockred {
+   position: fixed; /* Фиксируем его на экране */
+   top: 0;
+   margin-left: 40px;
+   width: 1180px;;
+   height: 100%;
+   background-color: white; /* Красный фон */
+   z-index: -9999;
+   box-shadow: -10px 0 15px rgba(0, 0, 0, 0.1), 10px 0 15px rgba(0, 0, 0, 0.1);
+   max-width: 100%;
+   max-height: auto;
+}
